@@ -41,6 +41,14 @@ public class Event {
 		this.createdAt = createdAt;
 	}
 
+	public Actor getActor() {
+		return actor;
+	}
+
+	public void setActor(Actor actor) {
+		this.actor = actor;
+	}
+	
 	@Override
 	public String toString() {
 		return "Events [id=" + id + ", type=" + type + ", createdAt=" + createdAt + "]";

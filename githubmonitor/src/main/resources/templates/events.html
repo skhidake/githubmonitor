@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Github events</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<p th:text="'Github owner:  ' + ${owner} + '!'" />
+	<p th:text="'Github Repository: ' + ${repo} + '!'" />
+	<table border="1">
+		<tr>
+			<td>Id</td>
+			<td>Type</td>
+			<td>Created At</td>
+			<td>Actor Id</td>
+			<td>Actor Name</td>
+		</tr>
+		<tr th:each="event : ${list}">
+			<td th:text="${event.id}">Id</td>
+			<td th:text="${event.type}">Type</td>
+			<td th:text="${event.createdAt}">createdAt</td>
+			<td th:text="${event.actor.actor_id}">Actor Id</td>
+			<td th:text="${event.actor.name}">Actor Name</td>
+		</tr>
+	</table>
+</body>
+</html>
