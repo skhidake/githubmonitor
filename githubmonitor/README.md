@@ -17,4 +17,3 @@ Used spring RestTemplate API to invoke Github rest endpoint
 ## Can be run as a Jar 
 
 	`mvn clean install` generate a jar which could run on server or local server
-
