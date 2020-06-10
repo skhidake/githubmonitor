@@ -43,4 +43,9 @@ Used spring RestTemplate API to invoke Github rest endpoint
 ## Pending Items
 	Pagination
 	Sorting
+
+## Error Handling
+	Generic exception handling added only for GithubController.java , could be enable at class level as well as application level
+	
+	
 	

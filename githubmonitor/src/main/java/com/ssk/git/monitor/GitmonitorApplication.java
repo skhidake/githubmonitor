@@ -17,4 +17,5 @@ public class GitmonitorApplication {
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
 		return builder.build();
 	}
+
 }
